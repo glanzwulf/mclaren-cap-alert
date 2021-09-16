@@ -1,0 +1,22 @@
+# Meta
+**/.DS_Store
+
+# Logs
+logs
+*.log
+
+# Dependency directories
+node_modules
+
+# Distribution
+dist
+
+# ide configs
+.idea
+.vscode
+
+.env
+
+src/config.json
+
+screenshots
