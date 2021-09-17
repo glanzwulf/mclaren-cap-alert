@@ -8,13 +8,12 @@ const handleStockAvailability = async (
   stockFound: boolean,
 ) => {
   if (!stockFound) {
-    await sendMessage(
-      `Still no stock for ${link.name}`
-    );
+    console.log(`Still no stock for ${link.name}`);
     return;
   }
   await sendMessage(
-    `🚨 ${" "}The cool cap (${link.name}) might be available at ${link.url} @here`
+    `🚨@here🚨 
+    ${" "}The cool cap (${link.name}) might be available at ${link.url}`
   );
 };
 

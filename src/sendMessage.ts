@@ -1,7 +1,7 @@
+require("dotenv").config();
 const { WebhookClient } = require('discord.js');
-const { webhookId, webhookToken } = require('./config.json');
 
-const webhookClient = new WebhookClient({ id: webhookId, token: webhookToken });
+const webhookClient = new WebhookClient({ id: process.env.WEBHOOKID, token: process.env.WEBHOOKTOKEN });
 
 export const sendMessage = async (
   message: string,
